@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body a{
+    text-decoration: none;
+    color: #000000;
+}
+ul li{
+    list-style: none;
+}
+body{
+    width:100%;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+}
+::after{
+    display: block;
+    clear: both;
+    content: '';
+}
+
+/*header部分*/
+.header-left{
+    width: 50%;
+    float: left;
+    padding: 25px;
+}
+.header-left a,.header-left a:hover{
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+.header-right{
+    width: 50%;
+    float: right;
+    padding: 25px;
+}
+.header-right ul{
+    display: flex;
+    float: right;
+}
+.header-right ul li{
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.header-right ul li a,.header-right ul li a:hover{
+     font-size: 17px;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/*section部分*/
+section{
+    background-image: url("../img/banner_04.jpg");
+    background-size: cover;
+    height: 600px;
+    background-attachment: fixed;
+}
+section .section-top{
+    text-align: center;
+    padding-top: 100px;
+}
+section .section-top img {
+    border-radius: 50%;
+    width: 250px;
+
+}
+
+section .section-bottom{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*main部分*/
+.snip1573 {
+    background-color: #000;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 10px 7px;
+    max-width: 315px;
+    min-width: 230px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.snip1573 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+}
+
+.snip1573:before,
+.snip1573:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.35s ease;
+    background-color:rgba(0,0,0,0.5);
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    content: '';
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.snip1573:before {
+    transform: skew(45deg) translateX(-155%);
+}
+
+.snip1573:after {
+    transform: skew(45deg) translateX(155%);
+}
+
+.snip1573 img {
+    backface-visibility: hidden;/*隐藏背面*/
+    max-width: 100%;
+    vertical-align: top;/*设置元素的垂直对齐*/
+}
+
+.snip1573 figcaption {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 2;
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    box-shadow: 0 0 10px #000000;
+}
+
+.snip1573 h3 {
+    background-color:rgba(0,0,0,0.5);
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+.snip1573 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.snip1573:hover > img,
+.snip1573.hover > img {
+    opacity: 0.5;
+}
+
+.snip1573:hover:before,
+.snip1573.hover:before {
+    transform: skew(45deg) translateX(-55%);
+}
+
+.snip1573:hover:after,
+.snip1573.hover:after {
+    transform: skew(45deg) translateX(55%);
+}
+
+.snip1573:hover figcaption,
+.snip1573.hover figcaption {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+#main .zi{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 32px;
+}
+#main .jieshao{
+    width: 36%;
+    float: left;
+    margin-left:74px;
+    font-size: 18px;
+}
+#main .jineng{
+    width: 47%;
+    float: right;
+    margin-right:36px;
+    font-size: 18px;
+}
+#main .main-three{
+    width: 74%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+#main .main-three .lab{
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #9a9696;
+}
+#main .main-three .lab input,.lab textarea{
+    font-size: 1.5em;
+    position: relative;
+    z-index: 1;
+    padding-right: 0;
+    padding-left: 0;
+    resize: none;
+    border: none;
+    border-radius: 0;
+    margin-top: 10px;
+    background: 0 0;
+    box-shadow: none!important;
+}
+#main .main-three .dd{
+    border: none;
+}
+
+footer{
+    background-image: url("../img/main.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+footer .one,.two,.three{
+    float: left;
+    width: 25%;
+    margin-left: 60px;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+/*
+mvvm 单页面管理 项目监听 UI WEBPACK ajxa*/
